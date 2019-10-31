@@ -65,17 +65,16 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container {
+body {
 	max-width: 960px;
 	margin: 0 auto;
   }
   
   nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
-	
+	height: 100px;
   }
   
   nav a {
@@ -106,6 +105,10 @@ h1, h2, h3, h4, h5 {
 
   .circle {
 	width: 45%;
+  }
+
+  h1 {
+	  font-size: 1.7em;
   }
   
   .title h1 {
@@ -146,24 +149,84 @@ h1, h2, h3, h4, h5 {
 	height: 200px;
 	align-items: center;
 	justify-content: space-between;
+	border-bottom: 1px solid black;
   }
   
   .box3 {
-	width: 30%;
+	width: 32%;
 	align-items: center;
   }
   
-  .address {
-	margin-top: 20px;
-	font-family: 'Staatliches', cursive;
+  address {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 200px;
   }
   
   .contact {
-	margin-top: 15px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-evenly;
+	  height: 100px;
   }
+
   
   footer {
-	text-align: center;
-	margin: 35px;
-	font-family: 'Staatliches', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
   }
+
+  /* Styles for Services page */
+
+.top {
+	display: flex;
+	height: 150px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;	
+
+}
+
+.cards section {
+	display: flex;
+	flex-direction: column;
+	width: 47%;
+	border: 1px solid grey;	
+	justify-content: space-between;
+	height: 220px;
+	padding: 20px;
+	background-color: lightgray;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.cards section p {
+	margin-bottom: 20px;
+}
+
+.learn-button {
+	border: 1px solid black;
+	padding: 10px;
+	width: 150px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.learn-button:hover {
+	color: white;
+	background-color: black;
+}
+
+
+
