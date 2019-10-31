@@ -187,7 +187,6 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid black;
-	
 }
 
 .cards {
@@ -195,7 +194,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;	
-
+	border-bottom: 3px solid black;
+	padding-bottom: 20px;
 }
 
 .cards section {
@@ -204,11 +204,12 @@ body {
 	width: 47%;
 	border: 1px solid grey;	
 	justify-content: space-between;
-	height: 220px;
+	height: 100%;
 	padding: 20px;
 	background-color: lightgray;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	line-height: 20px;
 }
 
 .cards section p {
@@ -226,6 +227,32 @@ body {
 .learn-button:hover {
 	color: white;
 	background-color: black;
+}
+
+.bottom {
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-between;
+}
+
+.bottom section {
+	display: flex;
+	flex-direction: column;
+	width: 47%;
+	justify-content: flex-start;
+	border 1px solid black;	
+}
+
+.services-info-img {
+	width: 100%;
+}
+
+ul { 
+	display: flex;
+	flex-direction: column;
+	list-style-type: square;
+	margin-left: 20px;
+	justify-content: space-between;
 }
 
 
